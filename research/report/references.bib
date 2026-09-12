@@ -1,0 +1,3191 @@
+
+
+
+
+
+
+
+
+@article{LLM360K2V2_2025,
+  title = {K2: A Foundation Language Model from {LLM360}},
+  author = {{LLM360 Team}},
+  year = {2025},
+  note = {See \url{https://www.llm360.ai/}}
+}
+
+@inproceedings{SwitchHeadNeurIPS2024,
+  title = {{SwitchHead}: Accelerating Transformers with Mixture-of-Experts Attention},
+  author = {Csordas, Robert and Pihlaja, Pethro and Schmidhuber, J{\"u}rgen},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year = {2024},
+  note = {arXiv:2312.07987}
+}
+
+@misc{qwen3_2025,
+  author       = {{Qwen Team}},
+  title        = {{Qwen3} Technical Report},
+  year         = {2025},
+  howpublished = {\url{https://qwenlm.github.io/blog/qwen3/}},
+  note         = {Alibaba Cloud. Models: Qwen3-0.6B through Qwen3-235B-A22B.}
+}
+
+@misc{qwen35_2025,
+  author       = {{Qwen Team}},
+  title        = {{Qwen3.5} and {Qwen3.5-MoE} Technical Report},
+  year         = {2025},
+  howpublished = {\url{https://qwenlm.github.io/blog/qwen3.5/}},
+  note         = {Alibaba Cloud. Models: Qwen3.5-27B (Hybrid DeltaNet) and Qwen3.5-397B-A17B (MoE + Gated DeltaNet).}
+}
+
+%%% ============================================================
+%%% FOUNDATIONAL TRANSFORMER ARCHITECTURE
+%%% ============================================================
+
+@inproceedings{vaswani2017attention,
+  author    = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, \L{}ukasz and Polosukhin, Illia},
+  title     = {Attention Is All You Need},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {30},
+  year      = {2017}
+}
+
+%%% ============================================================
+%%% LEARNED HALTING / ADAPTIVE COMPUTATION
+%%% ============================================================
+
+@misc{graves2016act,
+  author       = {Graves, Alex},
+  title        = {Adaptive Computation Time for Recurrent Neural Networks},
+  year         = {2016},
+  howpublished = {\url{https://arxiv.org/abs/1603.08983}}
+}
+
+@inproceedings{banino2021pondernet,
+  author    = {Banino, Andrea and Balaguer, Jan and Blundell, Charles},
+  title     = {{PonderNet}: Learning to Ponder},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2021},
+  howpublished = {\url{https://arxiv.org/abs/2107.05407}}
+}
+
+@misc{banino2021pondernet_arxiv,
+  author       = {Banino, Andrea and Balaguer, Jan and Blundell, Charles},
+  title        = {{PonderNet}: Learning to Ponder},
+  year         = {2021},
+  howpublished = {\url{https://arxiv.org/abs/2107.05407}}
+}
+
+@misc{dehghani2019universal,
+  author       = {Dehghani, Mostafa and Gouws, Stephan and Vinyals, Oriol and Uszkoreit, Jakob and Kaiser, \L{}ukasz},
+  title        = {Universal Transformers},
+  year         = {2019},
+  howpublished = {\url{https://arxiv.org/abs/1807.03819}}
+}
+
+@misc{fan2024looped,
+  author       = {Fan, Xuezhe and others},
+  title        = {Looped Transformers for Length Generalization},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2409.15647}},
+  note         = {Demonstrates adaptive loop step count in transformers for algorithmic reasoning; direct prior art for Idea 6.1.}
+}
+
+%%% ============================================================
+%%% RECURRENT / LINEAR ATTENTION ARCHITECTURES
+%%% ============================================================
+
+@misc{peng2023rwkv,
+  author       = {Peng, Bo and Alcaide, Eric and Anthony, Quentin and others},
+  title        = {{RWKV}: Reinventing {RNNs} for the Transformer Era},
+  year         = {2023},
+  howpublished = {\url{https://arxiv.org/abs/2305.13048}}
+}
+
+%%% ============================================================
+%%% PREFILL / DECODE DISAGGREGATION (SERVING LEVEL)
+%%% ============================================================
+
+@misc{patel2023splitwise,
+  author       = {Patel, Pratyush and Choukse, Esha and Zhang, Chaojie and Shah, Aakanksha and Goiri, {\'I}\~nigo and Maleki, Saeed and Bianchini, Ricardo},
+  title        = {Splitwise: Efficient Generative {LLM} Inference Using Phase Splitting},
+  year         = {2023},
+  howpublished = {\url{https://arxiv.org/abs/2311.18677}},
+  note         = {ISCA 2024.}
+}
+
+@misc{zhong2024distserve,
+  author       = {Zhong, Yinmin and Liu, Shengyu and Chen, Junda and Hu, Jianbo and Zhu, Yibo and Liu, Xuanzhe and Jin, Xin and Zhang, Hao},
+  title        = {{DistServe}: Disaggregating Prefill and Decoding for Goodput-Optimized Large Language Model Serving},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2401.09670}},
+  note         = {OSDI 2024.}
+}
+
+@misc{agrawal2023sarathi,
+  author       = {Agrawal, Amey and Panwar, Ashish and Mohan, Jayashree and Kwatra, Nipun and Gulavani, Bhargav S. and Ramjee, Ramachandran},
+  title        = {{SARATHI}: Efficient {LLM} Inference by Piggybacking Decodes with Chunked Prefills},
+  year         = {2023},
+  howpublished = {\url{https://arxiv.org/abs/2308.16369}}
+}
+
+%%% ============================================================
+%%% PREFILL / DECODE ARCHITECTURAL SPLIT (MODEL LEVEL)
+%%% ============================================================
+
+@misc{sun2024yoco,
+  author       = {Sun, Yutao and Dong, Li and Zhu, Yi and Huang, Shaohan and Wang, Wenhui and Ma, Shuming and Zhang, Quanlu and Wang, Jianyong and Wei, Furu},
+  title        = {{YOCO}: You Only Cache Once --- Decoder-Decoder Architectures for Language Models},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2405.05254}},
+  note         = {Closest model-level prior art for Idea 6.2.}
+}
+
+%%% ============================================================
+%%% DISCRETE DIFFUSION LANGUAGE MODELS
+%%% ============================================================
+
+@misc{arriola2025bd3lm,
+  author       = {Arriola, Marianne and Gokaslan, Aaron and Chiu, Justin T. and Yang, Zhihan and Qi, Jiaqi and Han, Shen and Sahoo, Subham Sekhar and Kuleshov, Volodymyr},
+  title        = {Block Diffusion: Interpolating Between Autoregressive and Diffusion Language Models},
+  year         = {2025},
+  howpublished = {\url{https://arxiv.org/abs/2503.09573}},
+  note         = {ICLR 2025 Oral. BD3-LM: the published version of Idea 6.3.}
+}
+
+@misc{sahoo2024mdlm,
+  author       = {Sahoo, Subham Sekhar and Arriola, Marianne and Schiff, Yair and Gokaslan, Aaron and Marroquin, Edgar and Chiu, Justin T. and Rush, Alexander and Kuleshov, Volodymyr},
+  title        = {Simple and Effective Masked Diffusion Language Models},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2406.07524}},
+  note         = {NeurIPS 2024.}
+}
+
+@misc{nie2025llada,
+  author       = {Nie, Shen and Zhu, Fengqi and You, Jiacheng and Ou, Zhihao and An, Chenyu and Chen, Liwei and Qian, Jiwen and Wang, Bolin and Xie, Bin and Luo, Jincheng and others},
+  title        = {{LLaDA}: Large Language Diffusion with mAsking},
+  year         = {2025},
+  howpublished = {\url{https://arxiv.org/abs/2502.09992}}
+}
+
+@misc{lou2024sedd,
+  author       = {Lou, Aaron and Meng, Chenlin and Ermon, Stefano},
+  title        = {Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2310.16834}},
+  note         = {ICML 2024 Oral.}
+}
+
+%%% ============================================================
+%%% SPECULATIVE DECODING
+%%% ============================================================
+
+@misc{leviathan2022speculative,
+  author       = {Leviathan, Yaniv and Kalman, Matan and Matias, Yossi},
+  title        = {Fast Inference from Transformers via Speculative Decoding},
+  year         = {2022},
+  howpublished = {\url{https://arxiv.org/abs/2211.17192}},
+  note         = {ICML 2023 Oral.}
+}
+
+@misc{cai2024medusa,
+  author       = {Cai, Tianle and Li, Yuhong and Geng, Zhengyang and Peng, Hongwu and Lee, Jason D. and Chen, Deming and Dao, Tri},
+  title        = {{Medusa}: Simple {LLM} Inference Acceleration Framework with Multiple Decoding Heads},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2401.10774}}
+}
+
+@misc{li2024eagle,
+  author       = {Li, Yuhui and Wei, Fangyun and Zhang, Chao and Zhang, Hongyang},
+  title        = {{EAGLE}: Speculative Sampling Requires Rethinking Feature Uncertainty},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2401.15077}},
+  note         = {ICML 2024.}
+}
+
+%%% ============================================================
+%%% MIXTURE OF EXPERTS
+%%% ============================================================
+
+@misc{shazeer2017moe,
+  author       = {Shazeer, Noam and Mirhoseini, Azalia and Maziarz, Krzysztof and Davis, Andy and Le, Quoc and Hinton, Geoffrey and Dean, Jeff},
+  title        = {Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer},
+  year         = {2017},
+  howpublished = {\url{https://arxiv.org/abs/1701.06538}},
+  note         = {ICLR 2017.}
+}
+
+%%% ============================================================
+%%% PARAMETER-EFFICIENT FINE-TUNING
+%%% ============================================================
+
+@misc{hu2022lora,
+  author       = {Hu, Edward J. and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
+  title        = {{LoRA}: Low-Rank Adaptation of Large Language Models},
+  year         = {2022},
+  howpublished = {\url{https://arxiv.org/abs/2106.09685}},
+  note         = {ICLR 2022.}
+}
+
+@misc{dettmers2023qlora,
+  author       = {Dettmers, Tim and Pagnoni, Artidoro and Holtzman, Ari and Zettlemoyer, Luke},
+  title        = {{QLoRA}: Efficient Finetuning of Quantized {LLMs}},
+  year         = {2023},
+  howpublished = {\url{https://arxiv.org/abs/2305.14314}},
+  note         = {NeurIPS 2023.}
+}
+
+%%% ============================================================
+%%% WEIGHT QUANTIZATION
+%%% ============================================================
+
+@misc{frantar2022gptq,
+  author       = {Frantar, Elias and Ashkboos, Saleh and Hoefler, Torsten and Alistarh, Dan},
+  title        = {{GPTQ}: Accurate Post-Training Quantization for Generative Pre-trained Transformers},
+  year         = {2022},
+  howpublished = {\url{https://arxiv.org/abs/2210.17323}},
+  note         = {ICLR 2023.}
+}
+
+@misc{lin2023awq,
+  author       = {Lin, Ji and Tang, Jiaming and Tang, Haotian and Yang, Shang and Chen, Wei-Ming and Han, Song},
+  title        = {{AWQ}: Activation-aware Weight Quantization for {LLM} Compression and Acceleration},
+  year         = {2023},
+  howpublished = {\url{https://arxiv.org/abs/2306.00978}},
+  note         = {MLSys 2024.}
+}
+
+@misc{frantar2024marlin,
+  author       = {Frantar, Elias and Castro, Roberto L. and Chen, Jiale and Hoefler, Torsten and Alistarh, Dan},
+  title        = {{MARLIN}: Mixed-Precision {AUTO-REgressive} {LINear} Layer Kernels},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2408.11743}}
+}
+
+%%% ============================================================
+%%% KV CACHE COMPRESSION AND EVICTION
+%%% ============================================================
+
+@misc{zhang2023h2o,
+  author       = {Zhang, Zhenyu and Sheng, Ying and Zhou, Tianyi and Chen, Tianlong and Zheng, Lianmin and Cai, Ruisi and Song, Zhao and Tian, Yuandong and R\'e, Christopher and Barrett, Clark and others},
+  title        = {{H2O}: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models},
+  year         = {2023},
+  howpublished = {\url{https://arxiv.org/abs/2306.14048}},
+  note         = {NeurIPS 2023.}
+}
+
+@misc{li2024snapkv,
+  author       = {Li, Yuhong and Han, Yingbing and Yang, Bofei and Vyas, Beidi and Gao, Yun and Mirhoseini, Azalia and others},
+  title        = {{SnapKV}: {LLM} Knows What You are Looking for Before Generation},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2404.14469}}
+}
+
+%%% ============================================================
+%%% ATTENTION MECHANISMS
+%%% ============================================================
+
+@misc{dao2023flashattention2,
+  author       = {Dao, Tri},
+  title        = {{FlashAttention-2}: Faster Attention with Better Parallelism and Work Partitioning},
+  year         = {2023},
+  howpublished = {\url{https://arxiv.org/abs/2307.08691}},
+  note         = {ICLR 2024.}
+}
+
+@misc{dao2023flashdecoding,
+  author       = {Dao, Tri and others},
+  title        = {{Flash-Decoding} for Long-Context Inference},
+  year         = {2023},
+  howpublished = {\url{https://crfm.stanford.edu/2023/10/12/flashdecoding.html}}
+}
+
+%%% ============================================================
+%%% LOW-RANK AND SPARSE WEIGHT COMPRESSION
+%%% ============================================================
+
+@misc{wang2024svdllm,
+  author       = {Wang, Xin and Zheng, Yu and Wan, Zhongwei and Zhang, Mi},
+  title        = {{SVD-LLM}: Truncation-Aware Singular Value Decomposition for Large Language Model Compression},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2403.07378}}
+}
+
+@misc{mishra2021sparsity,
+  author       = {Mishra, Asit and Latorre, Jorge Albericio and Pool, Jeff and Stosic, Darko and Stosic, Dusan and Venkatesh, Ganesh and Yu, Chong and Micikevicius, Paulius},
+  title        = {Accelerating Sparse Deep Neural Networks},
+  year         = {2021},
+  howpublished = {\url{https://arxiv.org/abs/2104.08378}}
+}
+
+%%% ============================================================
+%%% LAYER PRUNING AND ADAPTIVE DEPTH
+%%% ============================================================
+
+@misc{men2024shortgpt,
+  author       = {Men, Xin and Xu, Mingyu and Zhang, Qingyu and Wang, Bingning and Lin, Hongyu and Lu, Yaojie and Han, Xianpei and Chen, Weipeng},
+  title        = {{ShortGPT}: Layers in Large Language Models are More Redundant Than You Expect},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2403.03853}}
+}
+
+@misc{elhoushi2024layerskip,
+  author       = {Elhoushi, Mostafa and Shrivastava, Akshat and Liskovich, Diana and Hosmer, Basil and Wasti, Bram and Lai, Liangzhen and Garg, Anirudh and Ma, Ma and Abu-El-Haija, Sami and Mahmoud, Aly and others},
+  title        = {{LayerSkip}: Enabling Early Exit Inference and Self-Speculative Decoding},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2404.16710}},
+  note         = {ACL 2024.}
+}
+
+%%% ============================================================
+%%% ENCODER-DECODER AND CROSS-ATTENTION ARCHITECTURES
+%%% ============================================================
+
+@misc{raffel2020t5,
+  author       = {Raffel, Colin and Shazeer, Noam and Roberts, Adam and Lee, Katherine and Narang, Sharan and Matena, Michael and Zhou, Yanqi and Li, Wei and Liu, Peter J.},
+  title        = {Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer},
+  year         = {2020},
+  howpublished = {\url{https://arxiv.org/abs/1910.10683}},
+  note         = {JMLR 21(140):1--67, 2020.}
+}
+
+%%% ============================================================
+%%% ADAPTIVE COMPUTATION / MIXTURE OF EXPERTS ROUTING
+%%% ============================================================
+
+@misc{zeng2024adamoe,
+  author       = {Zeng, Zhiyao and He, Yixuan and others},
+  title        = {{AdaMoE}: Token-Adaptive Routing with Null Experts for Mixture-of-Experts Language Models},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2408.00361}}
+}
+
+@misc{lexi2024,
+  author       = {Chen, Siu Fung and others},
+  title        = {{LExI}: Layer-wise Expert Inference for Efficient {MoE} LLMs},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2412.12172}}
+}
+
+%%% ============================================================
+%%% DEEPSEEK ARCHITECTURES (REFERENCE)
+%%% ============================================================
+
+@misc{deepseek2024v2,
+  author       = {{DeepSeek-AI}},
+  title        = {{DeepSeek-V2}: A Strong, Economical, and Efficient Mixture-of-Experts Language Model},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2405.04434}}
+}
+
+%%% ============================================================
+%%% PRODUCTION / DISAGGREGATED SERVING SYSTEMS
+%%% ============================================================
+
+@misc{qin2024mooncake,
+  author       = {Qin, Ruoyu and Li, Zheming and He, Weiran and Zhang, Mingxing and Wu, Yongwei and Zheng, Weimin and Xu, Xinran},
+  title        = {{Mooncake}: A {KVCache}-Centric Disaggregated Architecture for {LLM} Serving},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2407.00079}}
+}
+
+@misc{miao2023specinfer,
+  author       = {Miao, Xupeng and Oliaro, Gabriele and Zhang, Zhihao and Cheng, Xinhao and Wang, Zeyu and Zhang, Zhengxin and Wong, Rae Ying Yee and Zhu, Alan and Yang, Lijie and Shi, Xiaoxiang and Jia, Chunan and Chen, Zhuoming and others},
+  title        = {{SpecInfer}: Accelerating Generative Large Language Model Serving with Tree-based Speculative Inference and Verification},
+  year         = {2023},
+  howpublished = {\url{https://arxiv.org/abs/2305.09781}},
+  note         = {ASPLOS 2024.}
+}
+
+%%% ============================================================
+%%% HYBRID AR + DIFFUSION
+%%% ============================================================
+
+@misc{gong2025diffugpt,
+  author       = {Gong, Shansan and Agrawal, Shivam and others},
+  title        = {{DiffuGPT}: Text Diffusion with Generative Pre-trained Transformers},
+  year         = {2025},
+  howpublished = {\url{https://arxiv.org/abs/2410.17891}},
+  note         = {ICLR 2025.}
+}
+
+@misc{fathi2025unifying,
+  author       = {Fathi, Mohsen and others},
+  title        = {Unifying Autoregressive and Diffusion-Based Sequence Generation},
+  year         = {2025},
+  howpublished = {\url{https://arxiv.org/abs/2504.06416}},
+  note         = {COLM 2025.}
+}
+
+%%% ============================================================
+%%% RECURRENT TRANSFORMER / DYNAMIC HALT
+%%% ============================================================
+
+@misc{chowdhury2024dynamic,
+  author       = {Chowdhury, Jhanvi and Caragea, Cornelia},
+  title        = {Investigating Recurrent Transformers with Dynamic Halt},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2402.00976}}
+}
+
+%%% ============================================================
+%%% VOCABULARY / OUTPUT LAYER COMPRESSION
+%%% ============================================================
+
+@misc{grave2017adaptive,
+  author       = {Grave, Edouard and Joulin, Armand and Ciss{\'e}, Moustapha and J{\'e}gou, Herv{\'e}},
+  title        = {Efficient Softmax Approximation for {GPUs}},
+  year         = {2017},
+  howpublished = {\url{https://arxiv.org/abs/1609.04309}},
+  note         = {ICML 2017. Adaptive softmax.}
+}
+
+%%% ============================================================
+%%% ADDITIONAL PAPERS CITED IN GROUP 6 RESEARCH DOCUMENTS
+%%% ============================================================
+
+@misc{sun2024block,
+  author       = {Sun, Mingjie and others},
+  title        = {{DeltaNet} Recurrent Language Model Parallelization},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2406.06484}},
+  note         = {Essential reference for DeltaNet gradient behavior under BPTT.}
+}
+
+@misc{zhao2024fastdllm,
+  author       = {Zhao, Zhiyu and others},
+  title        = {{Fast-dLLM}: Training-free Acceleration of Diffusion Large Language Models},
+  year         = {2025},
+  howpublished = {\url{https://arxiv.org/abs/2505.22618}}
+}
+
+@misc{zhao2024fastdllm2,
+  author       = {Zhao, Zhiyu and others},
+  title        = {{Fast-dLLM v2}: Block Diffusion with Hierarchical {KV} Caching},
+  year         = {2025},
+  howpublished = {\url{https://arxiv.org/abs/2509.26328}},
+  note         = {2.5$\times$ speedup over autoregressive decoding with $\sim$1B tokens of conversion training.}
+}
+
+@misc{ma2026diffindiff,
+  author       = {Ma, Zhilin and others},
+  title        = {Reclaiming Global Coherence in Semi-Autoregressive Diffusion Language Models},
+  year         = {2026},
+  howpublished = {\url{https://arxiv.org/abs/2601.13599}},
+  note         = {Quantifies 17\% perplexity increase from block-AR diffusion vs.\ full bidirectional diffusion.}
+}
+
+@misc{delcorro2023skipdecode,
+  author       = {{Del Corro}, Luciano and others},
+  title        = {{SkipDecode}: Autoregressive Skip Decoding with Batching and Caching for Efficient {LLM} Inference},
+  year         = {2023},
+  howpublished = {\url{https://arxiv.org/abs/2307.02628}}
+}
+
+@misc{liu2023dejavu,
+  author       = {Liu, Zichang and Wang, Jue and Dao, Tri and Zhou, Tianyi and Yuan, Binhang and Song, Zhao and Shrivastava, Anshumali and Zhang, Ce and Tian, Yuandong and R\'e, Christopher and Chen, Beidi},
+  title        = {Deja Vu: Contextual Sparsity for Efficient {LLMs} at Inference Time},
+  year         = {2023},
+  howpublished = {\url{https://arxiv.org/abs/2310.17157}},
+  note         = {ICML 2023.}
+}
+
+@misc{bae2025recursive,
+  author       = {Bae, Sangmin and others},
+  title        = {Recursive Gemma: Efficient Inference via Shared Weights and Early Exit},
+  year         = {2025},
+  howpublished = {\url{https://arxiv.org/abs/2501.09212}},
+  note         = {2.66$\times$ throughput from shared weights + early exit.}
+}
+
+@misc{lin2024qserve,
+  author       = {Lin, Yujun and Tang, Haotian and Yang, Shang and Zhang, Zhekai and Xiao, Guangxuan and Gan, Chuang and Han, Song},
+  title        = {{QServe}: W4A8KV4 Quantization and System Co-design for Efficient {LLM} Serving},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2405.04532}},
+  note         = {MLSys 2024.}
+}
+
+@misc{xia2024duoattn,
+  author       = {Xia, Guangxuan and Tang, Jiaming and Zeng, Jingfeng and Shi, Yunhao and Han, Song},
+  title        = {{DuoAttention}: Efficient Long-Context {LLM} Inference with Retrieval and Streaming Heads},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2410.10819}}
+}
+@misc{Aghajanyan2021,
+  author = {Aghajanyan and others},
+  title  = {Aghajanyan2021},
+  year   = {2021},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{AgostinelliEtAl2015,
+  author = {Agostinelli et al. and others},
+  title  = {Agostinelli Et Al2015},
+  year   = {2015},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{AkhavanAghdamEtAl2024,
+  author = {AkhavanAghdam et al. and others},
+  title  = {Akhavan Aghdam Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{AroraBASED2024,
+  author = {AroraBASED and others},
+  title  = {Arora B A S E D2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{AroraEtAl2024,
+  author = {Arora et al. and others},
+  title  = {Arora Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{BLaST2025,
+  author = {BLaST and others},
+  title  = {B La S T2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{BTXRef,
+  author = {BTXRef and others},
+  title  = {BTXRef},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Bae2025ICLR,
+  author = {Bae and others},
+  title  = {Bae2025 I C L R},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Bae2025RelaxedRecursive,
+  author = {Bae and others},
+  title  = {Bae2025 Relaxed Recursive},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{BaeEtAl2025,
+  author = {Bae et al. and others},
+  title  = {Bae Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{BaevskiAuli2019,
+  author = {BaevskiAuli and others},
+  title  = {Baevski Auli2019},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{BaiEtAl2025,
+  author = {Bai et al. and others},
+  title  = {Bai Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{BaninoEtAl2021,
+  author = {Banino et al. and others},
+  title  = {Banino Et Al2021},
+  year   = {2021},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{BaninoPonderNet2021,
+  author = {BaninoPonderNet and others},
+  title  = {Banino Ponder Net2021},
+  year   = {2021},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{BaykalAltUp2023,
+  author = {BaykalAltUp and others},
+  title  = {Baykal Alt Up2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Beck2024xLSTM,
+  author = {Beck and others},
+  title  = {Beck2024x L S T M},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{BeckXLSTM2024,
+  author = {BeckXLSTM and others},
+  title  = {Beck X L S T M2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{BeltagyLongformer2020,
+  author = {BeltagyLongformer and others},
+  title  = {Beltagy Longformer2020},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{BengioEtAl2015,
+  author = {Bengio et al. and others},
+  title  = {Bengio Et Al2015},
+  year   = {2015},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Bhatt2024CALDERA,
+  author = {Bhatt and others},
+  title  = {Bhatt2024 C A L D E R A},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{BhattEtAl2024,
+  author = {Bhatt et al. and others},
+  title  = {Bhatt Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Bieber2020IPAGNN,
+  author = {Bieber and others},
+  title  = {Bieber2020 I P A G N N},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{CALDERA2024,
+  author = {CALDERA and others},
+  title  = {C A L D E R A2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{CMoERef,
+  author = {CMoERef and others},
+  title  = {CMoERef},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{CSVDecode2025,
+  author = {CSVDecode and others},
+  title  = {C S V Decode2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{CaM2024,
+  author = {CaM and others},
+  title  = {Ca M2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Cai2024PyramidKV,
+  author = {Cai and others},
+  title  = {Cai2024 Pyramid K V},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ChellyEtAl2024,
+  author = {Chelly et al. and others},
+  title  = {Chelly Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Chen2023FrugalGPT,
+  author = {Chen and others},
+  title  = {Chen2023 Frugal G P T},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ChenDiffSoftmax2016,
+  author = {ChenDiffSoftmax and others},
+  title  = {Chen Diff Softmax2016},
+  year   = {2016},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ChenEtAl2019,
+  author = {Chen et al. and others},
+  title  = {Chen Et Al2019},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ChenFrugalGPT2023,
+  author = {ChenFrugalGPT and others},
+  title  = {Chen Frugal G P T2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ChenGrangier2016,
+  author = {ChenGrangier and others},
+  title  = {Chen Grangier2016},
+  year   = {2016},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ChengEtAl2025,
+  author = {Cheng et al. and others},
+  title  = {Cheng Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ChildSparseTransformer2019,
+  author = {ChildSparseTransformer and others},
+  title  = {Child Sparse Transformer2019},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ChittyVenkata2025LExI,
+  author = {ChittyVenkata and others},
+  title  = {Chitty Venkata2025 L Ex I},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ChittyVenkataEtAl2025,
+  author = {ChittyVenkata et al. and others},
+  title  = {Chitty Venkata Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ChoiEtAl2018,
+  author = {Choi et al. and others},
+  title  = {Choi Et Al2018},
+  year   = {2018},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ChungKim2025,
+  author = {ChungKim and others},
+  title  = {Chung Kim2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Composer2024,
+  author = {Composer and others},
+  title  = {Composer2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{CsordasEtAl2024,
+  author = {Csordas et al. and others},
+  title  = {Csordas Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{CuiAoA2017,
+  author = {CuiAoA and others},
+  title  = {Cui Ao A2017},
+  year   = {2017},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DaiDengEtAl2024,
+  author = {DaiDeng et al. and others},
+  title  = {Dai Deng Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DaoEtAl2022Monarch,
+  author = {Dao et al. and others},
+  title  = {Dao Et Al2022 Monarch},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DaoGu2024,
+  author = {DaoGu and others},
+  title  = {Dao Gu2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DaoMonarch2022,
+  author = {DaoMonarch and others},
+  title  = {Dao Monarch2022},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{De2024Griffin,
+  author = {De and others},
+  title  = {De2024 Griffin},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DeGriffin2024,
+  author = {DeGriffin and others},
+  title  = {De Griffin2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DeepSeekAI2024,
+  author = {DeepSeekAI and others},
+  title  = {Deep Seek A I2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Dehghani2019UT,
+  author = {Dehghani and others},
+  title  = {Dehghani2019 U T},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DehghaniEtAl2019,
+  author = {Dehghani et al. and others},
+  title  = {Dehghani Et Al2019},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DehghaniUniversalTransformer2018,
+  author = {DehghaniUniversalTransformer and others},
+  title  = {Dehghani Universal Transformer2018},
+  year   = {2018},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Dettmers2023SpQR,
+  author = {Dettmers and others},
+  title  = {Dettmers2023 Sp Q R},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DettmersLLMint8,
+  author = {DettmersLLMint8 and others},
+  title  = {DettmersLLMint8},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DettmersQLoRA2023,
+  author = {DettmersQLoRA and others},
+  title  = {Dettmers Q Lo R A2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DettmersSpQR2024,
+  author = {DettmersSpQR and others},
+  title  = {Dettmers Sp Q R2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Ding2022DaViT,
+  author = {Ding and others},
+  title  = {Ding2022 Da Vi T},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DingDaViT2022,
+  author = {DingDaViT and others},
+  title  = {Ding Da Vi T2022},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DoEtAl2023,
+  author = {Do et al. and others},
+  title  = {Do Et Al2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Dong2024Hymba,
+  author = {Dong and others},
+  title  = {Dong2024 Hymba},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DongEtAl2024Hymba,
+  author = {Dong et al. and others},
+  title  = {Dong Et Al2024 Hymba},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DynaSpec2024,
+  author = {DynaSpec and others},
+  title  = {Dyna Spec2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ElbayadDepthAdaptive2020,
+  author = {ElbayadDepthAdaptive and others},
+  title  = {Elbayad Depth Adaptive2020},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ElbayadEtAl2020,
+  author = {Elbayad et al. and others},
+  title  = {Elbayad Et Al2020},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{ElhoushiEtAl2024,
+  author = {Elhoushi et al. and others},
+  title  = {Elhoushi Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Fan2024LoopedTransformers,
+  author = {Fan and others},
+  title  = {Fan2024 Looped Transformers},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{FanLayerDrop2020,
+  author = {FanLayerDrop and others},
+  title  = {Fan Layer Drop2020},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Fang2023RAFT,
+  author = {Fang and others},
+  title  = {Fang2023 R A F T},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Fang2024MaskLLM,
+  author = {Fang and others},
+  title  = {Fang2024 Mask L L M},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{FangEtAl2024,
+  author = {Fang et al. and others},
+  title  = {Fang Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{FangMaskLLM2024,
+  author = {FangMaskLLM and others},
+  title  = {Fang Mask L L M2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{FastdLLM2025,
+  author = {FastdLLM and others},
+  title  = {Fastd L L M2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{FedusEtAl2022,
+  author = {Fedus et al. and others},
+  title  = {Fedus Et Al2022},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{FedusSwitch2022,
+  author = {FedusSwitch and others},
+  title  = {Fedus Switch2022},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{FrankleCarbin2019,
+  author = {FrankleCarbin and others},
+  title  = {Frankle Carbin2019},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{Frantar2023SparseGPT,
+  author = {Frantar and others},
+  title  = {Frantar2023 Sparse G P T},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{FrantarGPTQ2023,
+  author = {FrantarGPTQ and others},
+  title  = {Frantar G P T Q2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{FrantarMARLIN2024,
+  author = {FrantarMARLIN and others},
+  title  = {Frantar M A R L I N2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{FrantarSparseGPT2023,
+  author = {FrantarSparseGPT and others},
+  title  = {Frantar Sparse G P T2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{FrantatAlistarh2023,
+  author = {FrantatAlistarh and others},
+  title  = {Frantat Alistarh2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{FreeMoE2025,
+  author = {FreeMoE and others},
+  title  = {Free Mo E2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{FuMoA2024,
+  author = {FuMoA and others},
+  title  = {Fu Mo A2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GaleLeptikhinEtAl2022,
+  author = {GaleLeptikhin et al. and others},
+  title  = {Gale Leptikhin Et Al2022},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GaoEtAl2024,
+  author = {Gao et al. and others},
+  title  = {Gao Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GaoEtAl2025MoLA,
+  author = {Gao et al. and others},
+  title  = {Gao Et Al2025 Mo L A},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GateSkip2024,
+  author = {GateSkip and others},
+  title  = {Gate Skip2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Geiping2025Huginn,
+  author = {Geiping and others},
+  title  = {Geiping2025 Huginn},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GeipingEtAl2025,
+  author = {Geiping et al. and others},
+  title  = {Geiping Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GiannouEtAl2023,
+  author = {Giannou et al. and others},
+  title  = {Giannou Et Al2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GloriosaEtAl2024,
+  author = {Gloriosa et al. and others},
+  title  = {Gloriosa Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GoelEtAl2025,
+  author = {Goel et al. and others},
+  title  = {Goel Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GongEtAl2024MoM,
+  author = {Gong et al. and others},
+  title  = {Gong Et Al2024 Mo M},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GoodfellowEtAl2013Maxout,
+  author = {Goodfellow et al. and others},
+  title  = {Goodfellow Et Al2013 Maxout},
+  year   = {2013},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Grave2017AdaptiveSoftmax,
+  author = {Grave and others},
+  title  = {Grave2017 Adaptive Softmax},
+  year   = {2017},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GraveAdaptiveSoftmax2017,
+  author = {GraveAdaptiveSoftmax and others},
+  title  = {Grave Adaptive Softmax2017},
+  year   = {2017},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GraveEtAl2017,
+  author = {Grave et al. and others},
+  title  = {Grave Et Al2017},
+  year   = {2017},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Graves2016,
+  author = {Graves and others},
+  title  = {Graves2016},
+  year   = {2016},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{GravesACT2016,
+  author = {GravesACT and others},
+  title  = {Graves A C T2016},
+  year   = {2016},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GravesDNC2016,
+  author = {GravesDNC and others},
+  title  = {Graves D N C2016},
+  year   = {2016},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GravesEtAl2014NTM,
+  author = {Graves et al. and others},
+  title  = {Graves Et Al2014 N T M},
+  year   = {2014},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GravesEtAl2016DNC,
+  author = {Graves et al. and others},
+  title  = {Graves Et Al2016 D N C},
+  year   = {2016},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GravesNTM2014,
+  author = {GravesNTM and others},
+  title  = {Graves N T M2014},
+  year   = {2014},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Gu2023Mamba,
+  author = {Gu and others},
+  title  = {Gu2023 Mamba},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GuDao2024,
+  author = {GuDao and others},
+  title  = {Gu Dao2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GudMamba2023,
+  author = {GudMamba and others},
+  title  = {Gud Mamba2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Gulmez2026,
+  author = {Gulmez and others},
+  title  = {Gulmez2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{GuoChengEtAl2024,
+  author = {GuoCheng et al. and others},
+  title  = {Guo Cheng Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HGRN2024,
+  author = {HGRN and others},
+  title  = {H G R N2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Han2024SLTrain,
+  author = {Han and others},
+  title  = {Han2024 S L Train},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HanEtAl2024SLTrain,
+  author = {Han et al. and others},
+  title  = {Han Et Al2024 S L Train},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HanLMInfinite2024,
+  author = {HanLMInfinite and others},
+  title  = {Han L M Infinite2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HaoEtAl2025,
+  author = {Hao et al. and others},
+  title  = {Hao Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{He2016ResNet,
+  author = {He and others},
+  title  = {He2016 Res Net},
+  year   = {2016},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HeEtAl2015PReLU,
+  author = {He et al. and others},
+  title  = {He Et Al2015 P Re L U},
+  year   = {2015},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HeEtAl2024,
+  author = {He et al. and others},
+  title  = {He Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HeMagicPIG2024,
+  author = {HeMagicPIG and others},
+  title  = {He Magic P I G2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HeResNet2016,
+  author = {HeResNet and others},
+  title  = {He Res Net2016},
+  year   = {2016},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HeaklEtAl2026,
+  author = {Heakl et al. and others},
+  title  = {Heakl Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HoltzmanEtAl2020,
+  author = {Holtzman et al. and others},
+  title  = {Holtzman Et Al2020},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HuEtAl2022,
+  author = {Hu et al. and others},
+  title  = {Hu Et Al2022},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HuLoRA2022,
+  author = {HuLoRA and others},
+  title  = {Hu Lo R A2022},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Hua2019ChannelGating,
+  author = {Hua and others},
+  title  = {Hua2019 Channel Gating},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HuangAnEtAl2024,
+  author = {HuangAn et al. and others},
+  title  = {Huang An Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HuangDenseNet2017,
+  author = {HuangDenseNet and others},
+  title  = {Huang Dense Net2017},
+  year   = {2017},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{HybridReview2024,
+  author = {HybridReview and others},
+  title  = {Hybrid Review2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{IlinThanos2025,
+  author = {IlinThanos and others},
+  title  = {Ilin Thanos2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{JainEtAl2024,
+  author = {Jain et al. and others},
+  title  = {Jain Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Jawahar2022AutoMoE,
+  author = {Jawahar and others},
+  title  = {Jawahar2022 Auto Mo E},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{JawaharEtAl2023,
+  author = {Jawahar et al. and others},
+  title  = {Jawahar Et Al2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{JeddiEtAl2026,
+  author = {Jeddi et al. and others},
+  title  = {Jeddi Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{JiangWangEtAl2024,
+  author = {JiangWang et al. and others},
+  title  = {Jiang Wang Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Jin2025DTopP,
+  author = {Jin and others},
+  title  = {Jin2025 D Top P},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{JinEtAl2025,
+  author = {Jin et al. and others},
+  title  = {Jin Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{JinEtAl2025MoH,
+  author = {Jin et al. and others},
+  title  = {Jin Et Al2025 Mo H},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Kim2024SqueezeLLM,
+  author = {Kim and others},
+  title  = {Kim2024 Squeeze L L M},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{KimEtAl2024GateSkip,
+  author = {Kim et al. and others},
+  title  = {Kim Et Al2024 Gate Skip},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{KimSqueezeLLM2023,
+  author = {KimSqueezeLLM and others},
+  title  = {Kim Squeeze L L M2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{KimhiEtAl2024,
+  author = {Kimhi et al. and others},
+  title  = {Kimhi Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{KimiAttentionResiduals2026,
+  author = {KimiAttentionResiduals and others},
+  title  = {Kimi Attention Residuals2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{KitaevReformer2020,
+  author = {KitaevReformer and others},
+  title  = {Kitaev Reformer2020},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{KohliEtAl2026,
+  author = {Kohli et al. and others},
+  title  = {Kohli Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{KomatsuzakiEtAl2022,
+  author = {Komatsuzaki et al. and others},
+  title  = {Komatsuzaki Et Al2022},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{KwonPagedAttention2023,
+  author = {KwonPagedAttention and others},
+  title  = {Kwon Paged Attention2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LTE2024,
+  author = {LTE and others},
+  title  = {L T E2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Laitenberger2024GateSkip,
+  author = {Laitenberger and others},
+  title  = {Laitenberger2024 Gate Skip},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Lan2020ALBERT,
+  author = {Lan and others},
+  title  = {Lan2020 A L B E R T},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LanALBERT2019,
+  author = {LanALBERT and others},
+  title  = {Lan A L B E R T2019},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LanEtAl2020,
+  author = {Lan et al. and others},
+  title  = {Lan Et Al2020},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Lee2023OWQ,
+  author = {Lee and others},
+  title  = {Lee2023 O W Q},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Lee2024BLAST,
+  author = {Lee and others},
+  title  = {Lee2024 B L A S T},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Lee2025MXPlus,
+  author = {Lee and others},
+  title  = {Lee2025 M X Plus},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LeeBLAST2024,
+  author = {LeeBLAST and others},
+  title  = {Lee B L A S T2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LeeEtAl2024BLAST,
+  author = {Lee et al. and others},
+  title  = {Lee Et Al2024 B L A S T},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LeeMXplus2025,
+  author = {LeeMXplus and others},
+  title  = {Lee M Xplus2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LeeOWQ2024,
+  author = {LeeOWQ and others},
+  title  = {Lee O W Q2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LeiEtAl2021,
+  author = {Lei et al. and others},
+  title  = {Lei Et Al2021},
+  year   = {2021},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LeviathanSpeculative2023,
+  author = {LeviathanSpeculative and others},
+  title  = {Leviathan Speculative2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Li2024SCBench,
+  author = {Li and others},
+  title  = {Li2024 S C Bench},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{LiBTM2022,
+  author = {LiBTM and others},
+  title  = {Li B T M2022},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiEtAl2020LinearFSM,
+  author = {Li et al. and others},
+  title  = {Li Et Al2020 Linear F S M},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiEtAl2023LoftQ,
+  author = {Li et al. and others},
+  title  = {Li Et Al2023 Loft Q},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiEtAl2026,
+  author = {Li et al. and others},
+  title  = {Li Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiLoftQ2024,
+  author = {LiLoftQ and others},
+  title  = {Li Loft Q2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiMixLLM2024,
+  author = {LiMixLLM and others},
+  title  = {Li Mix L L M2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiSnapKV2024,
+  author = {LiSnapKV and others},
+  title  = {Li Snap K V2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiWang2026,
+  author = {LiWang and others},
+  title  = {Li Wang2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Lieber2024Jamba,
+  author = {Lieber and others},
+  title  = {Lieber2024 Jamba},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LieberEtAl2024,
+  author = {Lieber et al. and others},
+  title  = {Lieber Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Lin2017FPN,
+  author = {Lin and others},
+  title  = {Lin2017 F P N},
+  year   = {2017},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+
+@misc{LinAWQ2024,
+  author = {LinAWQ and others},
+  title  = {Lin A W Q2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LinQServe2024,
+  author = {LinQServe and others},
+  title  = {Lin Q Serve2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Liu2023Scissorhands,
+  author = {Liu and others},
+  title  = {Liu2023 Scissorhands},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Liu2025CoLA,
+  author = {Liu and others},
+  title  = {Liu2025 Co L A},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiuDejaVu2023,
+  author = {LiuDejaVu and others},
+  title  = {Liu Deja Vu2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiuEtAl2023DejaVu,
+  author = {Liu et al. and others},
+  title  = {Liu Et Al2023 Deja Vu},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiuEtAl2023Shortcuts,
+  author = {Liu et al. and others},
+  title  = {Liu Et Al2023 Shortcuts},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiuEtAl2025KAN,
+  author = {Liu et al. and others},
+  title  = {Liu Et Al2025 K A N},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiuEtAl2026,
+  author = {Liu et al. and others},
+  title  = {Liu Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiuLLMQAT2023,
+  author = {LiuLLMQAT and others},
+  title  = {Liu L L M Q A T2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiuMicroMix2025,
+  author = {LiuMicroMix and others},
+  title  = {Liu Micro Mix2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiuScissorHands2023,
+  author = {LiuScissorHands and others},
+  title  = {Liu Scissor Hands2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiuScissorHands2023b,
+  author = {LiuScissorHands and others},
+  title  = {Liu Scissor Hands2023b},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiuSiEtAl2019,
+  author = {LiuSi et al. and others},
+  title  = {Liu Si Et Al2019},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LiuSpinQuant2024,
+  author = {LiuSpinQuant and others},
+  title  = {Liu Spin Quant2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{LoRAMoERef,
+  author = {LoRAMoERef and others},
+  title  = {LoRAMoERef},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MEMoE2024,
+  author = {MEMoE and others},
+  title  = {M E Mo E2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MPSurvey2025,
+  author = {MPSurvey and others},
+  title  = {M P Survey2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{McDanelEtAl2026,
+  author = {McDanel et al. and others},
+  title  = {Mc Danel Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{MenShortGPT2024,
+  author = {MenShortGPT and others},
+  title  = {Men Short G P T2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Merrill2024,
+  author = {Merrill and others},
+  title  = {Merrill2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Merrill2024Expressiveness,
+  author = {Merrill and others},
+  title  = {Merrill2024 Expressiveness},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MerrillEtAl2024,
+  author = {Merrill et al. and others},
+  title  = {Merrill Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Mikolov2011,
+  author = {Mikolov and others},
+  title  = {Mikolov2011},
+  year   = {2011},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MirzadehEtAl2024,
+  author = {Mirzadeh et al. and others},
+  title  = {Mirzadeh Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MirzadehReLU2024,
+  author = {MirzadehReLU and others},
+  title  = {Mirzadeh Re L U2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MishraNMSparsity2021,
+  author = {MishraNMSparsity and others},
+  title  = {Mishra N M Sparsity2021},
+  year   = {2021},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MistralAI2024,
+  author = {MistralAI and others},
+  title  = {Mistral A I2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MnihHinton2008,
+  author = {MnihHinton and others},
+  title  = {Mnih Hinton2008},
+  year   = {2008},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MoEEdit2026,
+  author = {MoEEdit and others},
+  title  = {Mo E Edit2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MoNE2025,
+  author = {MoNE and others},
+  title  = {Mo N E2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MoRAM2025,
+  author = {MoRAM and others},
+  title  = {Mo R A M2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MolinaEtAl2020,
+  author = {Molina et al. and others},
+  title  = {Molina Et Al2020},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MoosaEtAl2026,
+  author = {Moosa et al. and others},
+  title  = {Moosa Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MorinBengio2005,
+  author = {MorinBengio and others},
+  title  = {Morin Bengio2005},
+  year   = {2005},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{MuqeethEtAl2024,
+  author = {Muqeeth et al. and others},
+  title  = {Muqeeth Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{NVIDIAADLR2025,
+  author = {NVIDIAADLR and others},
+  title  = {N V I D I A A D L R2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Nie2025BD3LM,
+  author = {Nie and others},
+  title  = {Nie2025 B D3 L M},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Ong2024RouteLLM,
+  author = {Ong and others},
+  title  = {Ong2024 Route L L M},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{OngRouteLLM2024,
+  author = {OngRouteLLM and others},
+  title  = {Ong Route L L M2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Pagliardini2024DenseFormer,
+  author = {Pagliardini and others},
+  title  = {Pagliardini2024 Dense Former},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{PapponeEtAl2025,
+  author = {Pappone et al. and others},
+  title  = {Pappone Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{PengRWKV2023,
+  author = {PengRWKV and others},
+  title  = {Peng R W K V2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Perez2018FiLM,
+  author = {Perez and others},
+  title  = {Perez2018 Fi L M},
+  year   = {2018},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{PerezEtAl2019,
+  author = {Perez et al. and others},
+  title  = {Perez Et Al2019},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{PerezFiLM2018,
+  author = {PerezFiLM and others},
+  title  = {Perez Fi L M2018},
+  year   = {2018},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Piekos2025MoSA,
+  author = {Piekos and others},
+  title  = {Piekos2025 Mo S A},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{PoliEtAl2024,
+  author = {Poli et al. and others},
+  title  = {Poli Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{PyramidKV2024,
+  author = {PyramidKV and others},
+  title  = {Pyramid K V2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Qwen2025,
+  author = {Qwen and others},
+  title  = {Qwen2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{REAP2025,
+  author = {REAP and others},
+  title  = {R E A P2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{RamachandranEtAl2017,
+  author = {Ramachandran et al. and others},
+  title  = {Ramachandran Et Al2017},
+  year   = {2017},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{RaposoEtAl2024,
+  author = {Raposo et al. and others},
+  title  = {Raposo Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{RaposoMoD2024,
+  author = {RaposoMoD and others},
+  title  = {Raposo Mo D2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{RazorAttention2024,
+  author = {RazorAttention and others},
+  title  = {Razor Attention2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{RouhaniMX2023,
+  author = {RouhaniMX and others},
+  title  = {Rouhani M X2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{RouterKD2025,
+  author = {RouterKD and others},
+  title  = {Router K D2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{RouterKD2026,
+  author = {RouterKD and others},
+  title  = {Router K D2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SDSSMSchuster2024,
+  author = {SDSSMSchuster and others},
+  title  = {S D S S M Schuster2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SLTrain2024,
+  author = {SLTrain and others},
+  title  = {S L Train2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SVDSoftmax2023,
+  author = {SVDSoftmax and others},
+  title  = {S V D Softmax2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Saratchandran2025DepthWidth,
+  author = {Saratchandran and others},
+  title  = {Saratchandran2025 Depth Width},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SaunshiEtAl2025,
+  author = {Saunshi et al. and others},
+  title  = {Saunshi Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ScarvellisEtAl2024,
+  author = {Scarvellis et al. and others},
+  title  = {Scarvellis Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Schuster2022CALM,
+  author = {Schuster and others},
+  title  = {Schuster2022 C A L M},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SchusterEtAl2022,
+  author = {Schuster et al. and others},
+  title  = {Schuster Et Al2022},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ShaoOmniQuant2024,
+  author = {ShaoOmniQuant and others},
+  title  = {Shao Omni Quant2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Shazeer2017,
+  author = {Shazeer and others},
+  title  = {Shazeer2017},
+  year   = {2017},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Shazeer2020SwiGLU,
+  author = {Shazeer and others},
+  title  = {Shazeer2020 Swi G L U},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ShazeerMoE2017,
+  author = {ShazeerMoE and others},
+  title  = {Shazeer Mo E2017},
+  year   = {2017},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SliceMoE2025,
+  author = {SliceMoE and others},
+  title  = {Slice Mo E2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Song2026AdaPonder,
+  author = {Song and others},
+  title  = {Song2026 Ada Ponder},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SongEtAl2024ProSparse,
+  author = {Song et al. and others},
+  title  = {Song Et Al2024 Pro Sparse},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SongEtAl2026,
+  author = {Song et al. and others},
+  title  = {Song Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SongPowerInfer2023,
+  author = {SongPowerInfer and others},
+  title  = {Song Power Infer2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SrivastavaEtAl2015,
+  author = {Srivastava et al. and others},
+  title  = {Srivastava Et Al2015},
+  year   = {2015},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Sukhbaatar2024Expert,
+  author = {Sukhbaatar and others},
+  title  = {Sukhbaatar2024 Expert},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SukhbaatarAdaptiveSpan2019,
+  author = {SukhbaatarAdaptiveSpan and others},
+  title  = {Sukhbaatar Adaptive Span2019},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Sun2024Wanda,
+  author = {Sun and others},
+  title  = {Sun2024 Wanda},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{SunEtAl2026,
+  author = {Sun et al. and others},
+  title  = {Sun Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SunHyperConnections2024,
+  author = {SunHyperConnections and others},
+  title  = {Sun Hyper Connections2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SunRetNet2023,
+  author = {SunRetNet and others},
+  title  = {Sun Ret Net2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SunWanda2024,
+  author = {SunWanda and others},
+  title  = {Sun Wanda2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Szatkowski2024D2DMoE,
+  author = {Szatkowski and others},
+  title  = {Szatkowski2024 D2 D Mo E},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{SzatkowskiEtAl2024,
+  author = {Szatkowski et al. and others},
+  title  = {Szatkowski Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Tang2024Quest,
+  author = {Tang and others},
+  title  = {Tang2024 Quest},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{TangQuest2024,
+  author = {TangQuest and others},
+  title  = {Tang Quest2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Terzic2025PDSSM,
+  author = {Terzic and others},
+  title  = {Terzic2025 P D S S M},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Terzic2025SDSSM,
+  author = {Terzic and others},
+  title  = {Terzic2025 S D S S M},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{TerzicEtAl2025,
+  author = {Terzic et al. and others},
+  title  = {Terzic Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{TransMamba2026,
+  author = {TransMamba and others},
+  title  = {Trans Mamba2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{TreeDiffusionLM2026,
+  author = {TreeDiffusionLM and others},
+  title  = {Tree Diffusion L M2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Tseng2024QuIPsharp,
+  author = {Tseng and others},
+  title  = {Tseng2024 Qu I Psharp},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{TsengPVTuning2024,
+  author = {TsengPVTuning and others},
+  title  = {Tseng P V Tuning2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ValipourDyLoRA2022,
+  author = {ValipourDyLoRA and others},
+  title  = {Valipour Dy Lo R A2022},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Vaswani2017,
+  author = {Vaswani and others},
+  title  = {Vaswani2017},
+  year   = {2017},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Wang2024LEMoE,
+  author = {Wang and others},
+  title  = {Wang2024 L E Mo E},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{WangEtAl2018SkipNet,
+  author = {Wang et al. and others},
+  title  = {Wang Et Al2018 Skip Net},
+  year   = {2018},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WangEtAl2024SVDLLM,
+  author = {Wang et al. and others},
+  title  = {Wang Et Al2024 S V D L L M},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WangHAQ2019,
+  author = {WangHAQ and others},
+  title  = {Wang H A Q2019},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WangLi2024LEMoE,
+  author = {WangLi and others},
+  title  = {Wang Li2024 L E Mo E},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WangNiepert2019,
+  author = {WangNiepert and others},
+  title  = {Wang Niepert2019},
+  year   = {2019},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WangSVDLLM2025,
+  author = {WangSVDLLM and others},
+  title  = {Wang S V D L L M2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WangStructformer2021,
+  author = {WangStructformer and others},
+  title  = {Wang Structformer2021},
+  year   = {2021},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WangZhuEtAl2024,
+  author = {WangZhu et al. and others},
+  title  = {Wang Zhu Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WeLore2024,
+  author = {WeLore and others},
+  title  = {We Lore2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Wei2024BlockDense,
+  author = {Wei and others},
+  title  = {Wei2024 Block Dense},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Wei2024LowRank,
+  author = {Wei and others},
+  title  = {Wei2024 Low Rank},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Wei2025WeLore,
+  author = {Wei and others},
+  title  = {Wei2025 We Lore},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WeiEtAl2024,
+  author = {Wei et al. and others},
+  title  = {Wei Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WeissEtAl2021,
+  author = {Weiss et al. and others},
+  title  = {Weiss Et Al2021},
+  year   = {2021},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WenEtAl2025,
+  author = {Wen et al. and others},
+  title  = {Wen Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WhatGetsActivated2026,
+  author = {WhatGetsActivated and others},
+  title  = {What Gets Activated2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WillardLouf2023,
+  author = {WillardLouf and others},
+  title  = {Willard Louf2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WillardShin2023,
+  author = {WillardShin and others},
+  title  = {Willard Shin2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Williams2026RLTT,
+  author = {Williams and others},
+  title  = {Williams2026 R L T T},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WuEtAl2018,
+  author = {Wu et al. and others},
+  title  = {Wu Et Al2018},
+  year   = {2018},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{WuEtAl2026,
+  author = {Wu et al. and others},
+  title  = {Wu Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{XiaoDuoAttention2024,
+  author = {XiaoDuoAttention and others},
+  title  = {Xiao Duo Attention2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{XiaoStreamingLLM2023,
+  author = {XiaoStreamingLLM and others},
+  title  = {Xiao Streaming L L M2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Yang2024DeltaNet,
+  author = {Yang and others},
+  title  = {Yang2024 Delta Net},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Yang2024GLA,
+  author = {Yang and others},
+  title  = {Yang2024 G L A},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{YangEtAl2024CyclicNN,
+  author = {Yang et al. and others},
+  title  = {Yang Et Al2024 Cyclic N N},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{YangEtAl2024KAT,
+  author = {Yang et al. and others},
+  title  = {Yang Et Al2024 K A T},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{YangEtAl2024Memory3,
+  author = {Yang et al. and others},
+  title  = {Yang Et Al2024 Memory3},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{YangEtAl2024MoEI2,
+  author = {Yang et al. and others},
+  title  = {Yang Et Al2024 Mo E I2},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{YangGLA2024,
+  author = {YangGLA and others},
+  title  = {Yang G L A2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{YangLooped2023,
+  author = {YangLooped and others},
+  title  = {Yang Looped2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Yu2024VATP,
+  author = {Yu and others},
+  title  = {Yu2024 V A T P},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{YuEtAl2026,
+  author = {Yu et al. and others},
+  title  = {Yu Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Yuan2023ASVD,
+  author = {Yuan and others},
+  title  = {Yuan2023 A S V D},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Yuan2024DSMoE,
+  author = {Yuan and others},
+  title  = {Yuan2024 D S Mo E},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Yuan2025NSA,
+  author = {Yuan and others},
+  title  = {Yuan2025 N S A},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{YuanASVD2023,
+  author = {YuanASVD and others},
+  title  = {Yuan A S V D2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{YuanEtAl2023ASVD,
+  author = {Yuan et al. and others},
+  title  = {Yuan Et Al2023 A S V D},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{YuanNSA2025,
+  author = {YuanNSA and others},
+  title  = {Yuan N S A2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZaheerBigBird2020,
+  author = {ZaheerBigBird and others},
+  title  = {Zaheer Big Bird2020},
+  year   = {2020},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Zandieh2026TurboQuant,
+  author = {Zandieh and others},
+  title  = {Zandieh2026 Turbo Quant},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZandiehTurboQuant2026,
+  author = {ZandiehTurboQuant and others},
+  title  = {Zandieh Turbo Quant2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{ZengZhaoEtAl2024,
+  author = {ZengZhao et al. and others},
+  title  = {Zeng Zhao Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+
+@misc{Zhang2025DynaSpec,
+  author = {Zhang and others},
+  title  = {Zhang2025 Dyna Spec},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhangAdaLoRA2023,
+  author = {ZhangAdaLoRA and others},
+  title  = {Zhang Ada Lo R A2023},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhangEtAl2022MoA,
+  author = {Zhang et al. and others},
+  title  = {Zhang Et Al2022 Mo A},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhangEtAl2022MoEfication,
+  author = {Zhang et al. and others},
+  title  = {Zhang Et Al2022 Mo Efication},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhangEtAl2024ReLU2,
+  author = {Zhang et al. and others},
+  title  = {Zhang Et Al2024 Re L U2},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhangEtAl2026,
+  author = {Zhang et al. and others},
+  title  = {Zhang Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhangH2O2023,
+  author = {ZhangH2O2023 and others},
+  title  = {ZhangH2O2023},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Zhao2023ATOM,
+  author = {Zhao and others},
+  title  = {Zhao2023 A T O M},
+  year   = {2023},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Zhao2024GaLore,
+  author = {Zhao and others},
+  title  = {Zhao2024 Ga Lore},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Zhao2025FRSpec,
+  author = {Zhao and others},
+  title  = {Zhao2025 F R Spec},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhaoATOM2024,
+  author = {ZhaoATOM and others},
+  title  = {Zhao A T O M2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhaoEtAl2025FRSpec,
+  author = {Zhao et al. and others},
+  title  = {Zhao Et Al2025 F R Spec},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhongEtAl2024,
+  author = {Zhong et al. and others},
+  title  = {Zhong Et Al2024},
+  year   = {2024},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhouLepikhinEtAl2022,
+  author = {ZhouLepikhin et al. and others},
+  title  = {Zhou Lepikhin Et Al2022},
+  year   = {2022},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhuEtAl2025Ouro,
+  author = {Zhu et al. and others},
+  title  = {Zhu Et Al2025 Ouro},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhuangEtAl2026,
+  author = {Zhuang et al. and others},
+  title  = {Zhuang Et Al2026},
+  year   = {2026},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{Zhuo2025PolyNorm,
+  author = {Zhuo and others},
+  title  = {Zhuo2025 Poly Norm},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{ZhuoEtAl2025,
+  author = {Zhuo et al. and others},
+  title  = {Zhuo Et Al2025},
+  year   = {2025},
+  howpublished = {\url{https://arxiv.org}},
+  note   = {See text for full citation}
+}
+
+@misc{DeepSeekAI2026V4,
+  author = {{DeepSeek-AI}},
+  title = {{DeepSeek-V4}: Towards Highly Efficient Million-Token Context Intelligence},
+  year = {2026},
+  howpublished = {\url{https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf}},
+  note = {Technical report and Hugging Face model release}
+}
+
+@misc{XieEtAl2026MHC,
+  author = {Xie et al.},
+  title = {{mHC}: Manifold-Constrained Hyper-Connections},
+  year = {2026},
+  howpublished = {\url{https://arxiv.org/abs/2512.24880}},
+  note = {See DeepSeek-V4 technical report for frontier-scale use}
+}
+
+@misc{JordanEtAl2024Muon,
+  author = {Jordan et al.},
+  title = {Muon: An optimizer for hidden layers in neural networks},
+  year = {2024},
+  howpublished = {\url{https://kellerjordan.github.io/posts/muon/}},
+  note = {Cited by DeepSeek-V4 technical report}
+}
+
+@misc{WangEtAl2026TileLang,
+  author = {Wang et al.},
+  title = {TileLang: Bridge Programmability and Performance in Modern Neural Kernels},
+  year = {2026},
+  howpublished = {\url{https://github.com/tile-ai/tilelang}},
+  note = {Kernel DSL used in DeepSeek-V4}
+}
+
+@misc{DeepSeekAI2025V32,
+  author = {{DeepSeek-AI}},
+  title = {{DeepSeek-V3.2}: Pushing the Frontier of Open Large Language Models},
+  year = {2025},
+  howpublished = {\url{https://arxiv.org/abs/2512.02556}},
+  note = {Baseline compared in DeepSeek-V4 report}
+}
+
+@misc{DeepSeekAI2025DeepGEMM,
+  author = {{DeepSeek-AI}},
+  title = {{DeepGEMM}: Clean and Efficient FP8 GEMM Kernels with Fine-Grained Scaling},
+  year = {2025},
+  howpublished = {\url{https://github.com/deepseek-ai/DeepGEMM}},
+  note = {DeepSeek kernel library; includes MegaMoE work referenced by DeepSeek-V4}
+}
